@@ -1,0 +1,42 @@
+@import "scss/colors";
+@import "scss/reset";
+@import "scss/font";
+@import "scss/grid";
+@import "scss/flexbox";
+
+// General 
+body {
+    header {
+        min-height: 22vh;
+        padding-top: 1.5rem;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+}
+
+// Theming
+body.light-theme {
+    background-color: $light-theme-bg;
+    color: $light-theme-dark-blue-text;
+
+    header {
+        background-color: $light-theme-header-bg;
+    }
+    
+    .card {
+        background-color: $light-theme-card-bg;
+    }
+}
+
+body.dark-theme {
+    background-color: $dark-theme-bg;
+    color: $dark-theme-blue-text;
+
+    header {
+        background-color: $dark-theme-header-bg;
+    }
+    
+    .card {
+        background-color: $dark-theme-card-bg;
+    }
+}

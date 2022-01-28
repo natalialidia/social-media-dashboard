@@ -1,0 +1,41 @@
+$grid-columns: 4;
+
+@mixin col-x($size) {
+    @for $i from 1 through $grid-columns {
+        .col-#{$size}-#{$i} { 
+            grid-column: auto/span #{$i};
+        }
+    }
+}
+
+.container {
+    display: grid;
+    margin: 0 auto;
+    padding: 0 15px;
+    grid-template-columns: repeat($grid-columns, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    column-gap: 15px;
+
+    @include col-x(xs);
+
+    @media (min-width: 576px) {  
+        max-width: 540px; 
+        @include col-x(sm);
+    }
+    @media (min-width: 768px) { 
+        max-width: 720px; 
+        @include col-x(md);
+    }
+    @media (min-width: 992px) { 
+        max-width: 960px; 
+        @include col-x(lg);
+    }
+    @media (min-width: 1200px) { 
+        max-width: 1140px; 
+        @include col-x(xl);
+    }
+    @media (min-width: 1400px) { 
+        max-width: 1320px;
+        @include col-x(xxl);
+    }
+}
