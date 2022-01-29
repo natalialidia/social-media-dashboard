@@ -11,7 +11,10 @@ html, body {
 
 body {
   font-family: "Inter", sans-serif;
-  Font-size: 14px;
+  line-height: 1.8rem;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .container {
@@ -126,6 +129,12 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
 }
+.flex.align-center {
+  align-items: center;
+}
+.flex.justify-center {
+  justify-content: center;
+}
 
 body header {
   min-height: 22vh;
@@ -134,9 +143,76 @@ body header {
   border-bottom-right-radius: 20px;
 }
 
+.card {
+  border: 0;
+  overflow: hidden;
+  border-radius: 0.3rem;
+}
+.card .content {
+  padding: 1rem 0.75rem;
+}
+.card .content .user {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1.5rem;
+}
+.card .content .user .username {
+  font-weight: 700;
+  font-size: 12px;
+  margin-left: 0.5rem;
+}
+.card .content .stats {
+  text-align: center;
+  padding-bottom: 1.3rem;
+}
+.card .content .stats .number {
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0.75rem 0;
+}
+.card .content .stats .description {
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+}
+.card .content .today-count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1db489;
+  font-weight: 700;
+  font-size: 12px;
+}
+.card .content .today-count span {
+  margin-left: 0.15rem;
+}
+.card.primary::before {
+  display: block;
+  content: "";
+  height: 5px;
+  width: 100%;
+}
+.card.primary.youtube::before {
+  background-color: #c4032a;
+}
+.card.primary.facebook::before {
+  background-color: #198ff5;
+}
+.card.primary.twitter::before {
+  background-color: #1ca0f2;
+}
+.card.primary.instagram::before {
+  background: linear-gradient(to right, #fdc468, #df4996);
+}
+
 body.light-theme {
   background-color: white;
   color: #1e202a;
+}
+body.light-theme .secondary-color {
+  color: #63687e;
 }
 body.light-theme header {
   background-color: #f5f7ff;
@@ -144,9 +220,15 @@ body.light-theme header {
 body.light-theme .card {
   background-color: #f0f2fa;
 }
+body.light-theme .card .content .user > .username {
+  color: #63687e;
+}
 
 body.dark-theme {
   background-color: #1e202a;
+  color: white;
+}
+body.dark-theme .secondary-color {
   color: #8b97c6;
 }
 body.dark-theme header {

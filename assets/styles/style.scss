@@ -14,29 +14,87 @@ body {
     }
 }
 
+.card {
+    border: 0;
+    overflow: hidden;
+    border-radius: .3rem;
+
+    .content {
+        padding: 1rem .75rem;
+        
+        .user {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 1.5rem;
+            .username {
+                font-weight: $font-weight-bold;
+                font-size: $font-size-sm;
+                margin-left: .5rem;
+            }
+        }
+
+        .stats {
+            text-align: center;
+            padding-bottom: 1.3rem;
+            .number { 
+                font-size: 60px; 
+                font-weight: $font-weight-bold; 
+                margin: .75rem 0;
+            }
+            .description { 
+                letter-spacing: .4rem; 
+                text-transform: uppercase;
+            }
+        }
+
+        .today-count {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $lime-green;
+            font-weight: $font-weight-bold;
+            font-size: $font-size-sm;
+            
+            span { margin-left: .15rem; }
+        }
+    }
+
+    &.primary::before {
+        display: block;
+        content: '';
+        height: 5px;
+        width: 100%;
+    }
+    &.primary.youtube::before { background-color: $youtube; }
+    &.primary.facebook::before { background-color: $facebook; }
+    &.primary.twitter::before { background-color: $twitter; }
+    &.primary.instagram::before { background: $instagram; }
+}
+
 // Theming
 body.light-theme {
     background-color: $light-theme-bg;
     color: $light-theme-dark-blue-text;
+    .secondary-color { color: $light-theme-blue-text;  }
 
-    header {
-        background-color: $light-theme-header-bg;
-    }
-    
-    .card {
-        background-color: $light-theme-card-bg;
+    header { background-color: $light-theme-header-bg; }
+   
+    .card { 
+        background-color: $light-theme-card-bg; 
+        .content {
+            .user > .username { color: $light-theme-blue-text;  }
+        }
     }
 }
 
 body.dark-theme {
     background-color: $dark-theme-bg;
-    color: $dark-theme-blue-text;
+    color: $dark-theme-white-text;
+    .secondary-color { color: $dark-theme-blue-text;  }
 
-    header {
-        background-color: $dark-theme-header-bg;
-    }
-    
-    .card {
-        background-color: $dark-theme-card-bg;
-    }
+    header { background-color: $dark-theme-header-bg; }
+    .card {  background-color: $dark-theme-card-bg; }
 }
