@@ -11,4 +11,7 @@ body {
     letter-spacing: 0.03em;
     font-size: $font-size;
     font-weight: $font-weight;
+
+    .font-bold { font-weight: $font-weight-bold; }
+    .font-small { font-size: $font-size-sm; }
 }

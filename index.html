@@ -13,129 +13,259 @@
 
 		<header>
 			<div class="container">
-				<div class="col-xs-4">
-					<h1>Social Media Dashboard</h1>
-					<span class="font-bold secondary-color"> Total Followers: 23,004 </span>
+				<div class="col-xs-4 header-content">
 					
-					Dark Mode
+					<div>
+						<h1>Social Media Dashboard</h1>
+						<span class="font-bold secondary-text"> Total Followers: 23,004 </span>
+					</div>
+
+					<div class="theme-switch">
+						<span class="switch-label">Dark Mode</span> 
+						<label class="switch">
+							<input value="1" id="switch-input" type="checkbox">
+							<span class="slider"></span>
+						</label>
+					</div>
+
 				</div>
 			</div>
 		</header>
 
-		<main class="container">
+		<main>
 
-			<div class="col-xs-4 col-sm-2 col-md-1">
+			<section class="container" id="social-media-stats">
 
-				<div class="card primary facebook">
-				
-					<div class="content">
-						
-						<div class="user">  
-							<img class="social-media" src="assets/images/icon-facebook.svg" alt="Facebook"> 
-							<span class="username"> @nathanf </span> 
-						</div>
-						
-						<div class="stats">
-							<p class="number">1987</p>
-							<p class="description">Followers</>
+				<div class="col-xs-4 col-sm-2 col-lg-1">
+					<div class="card primary facebook">
+						<div class="content">
+							<div class="user">  
+								<img class="social-media" src="assets/images/icon-facebook.svg" alt="Facebook"> 
+								<span class="username"> @nathanf </span> 
 							</div>
-							
-						<div class="today-count"> 
-							<img src="assets/images/icon-up.svg" alt="Up"> 
-							<span>12 Today</span> 
+							<div class="stats">
+								<p class="number">1987</p>
+								<p class="description">Followers<p/>
+							</div>
+							<div class="today-count"> 
+								<img src="assets/images/icon-up.svg" alt="Up"> 
+								<span class="green-text">12 Today</span> 
+							</div>
 						</div>
-						
-					</div>
-				
-				</div>
-			
-			</div>
-
-			<div class="col-xs-4 col-sm-2 col-md-1">
-				<div class="card primary twitter">
-					<div class="content">
-						@nathanf
-						1044
-						Followers
-						99 Today
 					</div>
 				</div>
-			</div>
-
-			<div class="col-xs-4 col-sm-2 col-md-1">
-				<div class="card primary instagram">
-					<div class="content">
-						@realnathanf
-						11k
-						Followers
-						1099 Today
-					</div>
-				</div>
-			</div>
-
-			<div class="col-xs-4 col-sm-2 col-md-1">
-				<div class="card primary youtube">
-					<div class="content">
-						Nathan F.
-						8239
-						Subscribers
-						144 Today
-					</div>
-				</div>
-			</div>
-
-			<div class="col-xs-4">
-				<h2> Overview - Today </h2>
-			</div>
-
-			<div class="col-xs-4 col-sm-2 col-md-1">
-				Page Views
-				87
-				3%
-			</div>
-
-			<div class="col-xs-4 col-sm-2 col-md-1">
-				Likes
-				52
-				2%
-			</div>
-			
-			<div class="col-xs-4 col-sm-2 col-md-1">
-				Likes
-				5462
-				2257%
-			</div>
-
-			<div class="col-xs-4 col-sm-2 col-md-1">
-				Profile Views
-				52k
-				1375%
-			</div>
-			
-			<div class="col-xs-4 col-sm-2 col-md-1">
-				Retweets
-				117
-				303%
-			</div>
-			
-			<div class="col-xs-4 col-sm-2 col-md-1">
-				Likes
-				507
-				553%
-			</div>
-			
-			<div class="col-xs-4 col-sm-2 col-md-1">
-				Likes
-				107
-				19%
-			</div>
-			
-			<div class="col-xs-4 col-sm-2 col-md-1">
-				Total Views
-				1407
-				12%
-			</div>
 	
+				<div class="col-xs-4 col-sm-2 col-lg-1">
+					<div class="card primary twitter">
+						<div class="content">
+							<div class="user">  
+								<img class="social-media" src="assets/images/icon-twitter.svg" alt="Twitter"> 
+								<span class="username"> @nathanf </span> 
+							</div>
+							<div class="stats">
+								<p class="number">1044</p>
+								<p class="description">Followers<p/>
+							</div>
+							<div class="today-count"> 
+								<img src="assets/images/icon-up.svg" alt="Up"> 
+								<span class="green-text">99 Today</span> 
+							</div>
+						</div>
+					</div>
+				</div>
+	
+				<div class="col-xs-4 col-sm-2 col-lg-1">
+					<div class="card primary instagram">
+						<div class="content">
+							<div class="user">  
+								<img class="social-media" src="assets/images/icon-instagram.svg" alt="Instagram"> 
+								<span class="username"> @realnathanf </span> 
+							</div>
+							<div class="stats">
+								<p class="number">11k</p>
+								<p class="description">Followers<p/>
+							</div>
+							<div class="today-count"> 
+								<img src="assets/images/icon-up.svg" alt="Up"> 
+								<span class="green-text">1099 Today</span> 
+							</div>	
+						</div>
+					</div>
+				</div>
+	
+				<div class="col-xs-4 col-sm-2 col-lg-1">
+					<div class="card primary youtube">
+						<div class="content">
+							<div class="user">  
+								<img class="social-media" src="assets/images/icon-youtube.svg" alt="Youtube"> 
+								<span class="username"> Nathan F. </span> 
+							</div>
+							<div class="stats">
+								<p class="number">8239</p>
+								<p class="description">Subscribers<p/>
+							</div>
+							<div class="today-count"> 
+								<img src="assets/images/icon-down.svg" alt="Up"> 
+								<span class="red-text">144 Today</span> 
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</section>
+
+			<section id="overview-today" class="container">
+
+				<div class="col-xs-4">
+					<h2 class="overview-today-title"> Overview - Today </h2>
+				</div>
+	
+				<div class="col-xs-4 col-sm-2 col-lg-1">
+					<div class="card">
+						<div class="content">
+							<div class="social-media-metrics">
+								<p> Page Views </p>
+								<img class="social-media" src="assets/images/icon-facebook.svg" alt="Facebook">
+							</div>
+							<div class="social-media-metrics-values">
+								<h1> 87 </h1>
+								<div class="percentage green-text">
+									<img src="assets/images/icon-up.svg" alt="Up">
+									<span>3%</span> 
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+				<div class="col-xs-4 col-sm-2 col-lg-1">
+					<div class="card">
+						<div class="content">
+							<div class="social-media-metrics">
+								<p> Likes </p>
+								<img class="social-media" src="assets/images/icon-facebook.svg" alt="Facebook">
+							</div>
+							<div class="social-media-metrics-values">
+								<h1> 52 </h1>
+								<div class="percentage red-text"> 
+									<img src="assets/images/icon-down.svg" alt="Down">
+									<span> 2% </span> 
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-xs-4 col-sm-2 col-lg-1">
+					<div class="card">
+						<div class="content">
+							<div class="social-media-metrics">
+								<p> Likes </p>
+								<img class="social-media" src="assets/images/icon-instagram.svg" alt="Instagram">
+							</div>
+							<div class="social-media-metrics-values">
+								<h1> 5462 </h1>
+								<div class="percentage green-text">
+									<img src="assets/images/icon-up.svg" alt="Up">
+									<span> 2257% </span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+				<div class="col-xs-4 col-sm-2 col-lg-1">
+					<div class="card">
+						<div class="content">
+							<div class="social-media-metrics">
+								<p> Profile Views </p>
+								<img class="social-media" src="assets/images/icon-instagram.svg" alt="Instagram">
+							</div>
+							<div class="social-media-metrics-values">
+								<h1> 52k </h1>
+								<div class="percentage green-text">
+									<img src="assets/images/icon-up.svg" alt="Up">
+									<span> 1375% </span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-xs-4 col-sm-2 col-lg-1">
+					<div class="card">
+						<div class="content">
+							<div class="social-media-metrics">
+								<p> Retweets </p>
+								<img class="social-media" src="assets/images/icon-twitter.svg" alt="Twitter">
+							</div>
+							<div class="social-media-metrics-values">
+								<h1> 117 </h1>
+								<div class="percentage green-text">
+									<img src="assets/images/icon-up.svg" alt="Up">
+									<span> 303% </span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-xs-4 col-sm-2 col-lg-1">
+					<div class="card">
+						<div class="content">
+							<div class="social-media-metrics">
+								<p> Likes </p>
+								<img class="social-media" src="assets/images/icon-twitter.svg" alt="Twitter">
+							</div>
+							<div class="social-media-metrics-values">
+								<h1> 507 </h1>
+								<div class="percentage green-text">
+									<img src="assets/images/icon-up.svg" alt="Up">
+									<span> 553% </span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-xs-4 col-sm-2 col-lg-1">
+					<div class="card">
+						<div class="content">
+							<div class="social-media-metrics">
+								<p> Likes </p>
+								<img class="social-media" src="assets/images/icon-youtube.svg" alt="youtube">
+							</div>
+							<div class="social-media-metrics-values">
+								<h1> 107 </h1>
+								<div class="percentage red-text">
+									<img src="assets/images/icon-down.svg" alt="Down">
+									<span> 19% </span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-xs-4 col-sm-2 col-lg-1">
+					<div class="card">
+						<div class="content">
+							<div class="social-media-metrics">
+								<p> Total Views </p>
+								<img class="social-media" src="assets/images/icon-youtube.svg" alt="youtube">
+							</div>
+							<div class="social-media-metrics-values">
+								<h1> 1407 </h1>
+								<div class="percentage red-text">
+									<img src="assets/images/icon-down.svg" alt="Down">
+									<span> 12% </span>
+								</div>
+							</div>
+						</div>
+					</div>				
+				</div>
+
+			</section>
+
 		</main>
 		
 		<footer class="container">
@@ -146,4 +276,23 @@
 		</footer>
 
 	</body>
+
+	<script type="text/javascript">
+
+		var switch_input = document.getElementById('switch-input');
+
+		switch_input.onchange = function(){
+
+			let body = document.getElementsByTagName('body')[0];
+
+			if (body.classList.contains('light-theme')) {
+				body.className = 'dark-theme';
+			} else {
+				body.className = 'light-theme';
+			}
+			
+		};
+
+	</script>
+
 </html>

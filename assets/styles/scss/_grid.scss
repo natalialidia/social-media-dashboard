@@ -4,6 +4,7 @@ $grid-columns: 4;
     @for $i from 1 through $grid-columns {
         .col-#{$size}-#{$i} { 
             grid-column: auto/span #{$i};
+            min-width: 0;
         }
     }
 }
@@ -11,10 +12,11 @@ $grid-columns: 4;
 .container {
     display: grid;
     margin: 0 auto;
-    padding: 0 15px;
+    padding-left: 15px;
+    padding-right: 15px;
     grid-template-columns: repeat($grid-columns, 1fr);
     grid-template-rows: repeat(1, 1fr);
-    column-gap: 15px;
+    column-gap: 30px;
 
     @include col-x(xs);
 
