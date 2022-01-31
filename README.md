@@ -27,9 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://natalialidia.github.io/social-media-dashboard/)
-
-## My process
+- Solution URL: [ FrontEnd Mentor Solution](https://www.frontendmentor.io/solutions/social-media-dashboard-with-theme-switcher-using-css-grid-and-sass-gmnrC8kNI)
+- Live Site URL: [GitHub Page](https://natalialidia.github.io/social-media-dashboard/)
 
 ### Built with
 
@@ -41,5 +40,5 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/natalialidia)
+- Frontend Mentor - [@natalialidia](https://www.frontendmentor.io/profile/natalialidia)
 
