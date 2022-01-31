@@ -8,20 +8,27 @@
 body {
     header {
         min-height: 220px;
-        padding-top: 1.5rem;
+        padding-top: 2rem;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
 
         .header-content {
-            display: flex;
-            justify-content: space-between;
+            hr {  
+                height: 1px; 
+                margin: 1rem 0;
+            }
 
             .theme-switch {
                 font-weight: $font-weight-bold;
                 display: flex;
                 align-items: center;
+                justify-content: space-between;
+                .switch { margin-left: .25rem; }    
+            }
 
-                .switch { margin-left: .25rem; }
+            @media (min-width: 576px) {
+                hr {display: none; }
+                .theme-switch { justify-content: flex-end; }
             }
         }
 
@@ -31,10 +38,15 @@ body {
     .red-text { color: $bright-red; }
 
     main { 
-        margin-top: -114px;
+        margin-top: -50px;
+
         section {
             margin-bottom: 1.5rem;
             &#overview-today .overview-today-title { margin: 1.5rem 0;}
+        }
+        
+        @media (min-width: 576px) {
+            margin-top: -114px;
         }
     }
 
@@ -142,13 +154,13 @@ body.light-theme {
         background-color: $light-theme-header-bg; 
 
         .header-content {
-            
+            hr {  background-color: $light-theme-blue-text; }
+
             .theme-switch {
                 .switch-label {color: $light-theme-blue-text; }
             
                 .switch .slider {
                     background: $light-theme-toggle;
-    
                     &:hover {
                         background: $dark-theme-toggle;
                     }
@@ -185,7 +197,8 @@ body.dark-theme {
         background-color: $dark-theme-header-bg; 
         
         .header-content {
-            
+            hr {  background-color: $dark-theme-blue-text; }
+
             .theme-switch {
                 .switch-label {color: $dark-theme-blue-text; }
             
